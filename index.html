@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-2 is-offset-1">
+                    <div class="field">
+                        <label class="label">Player 1</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="player name" id="inputName1">
+                        </div>
+                    
+                    </div>
+                    <button class="is-primary button is-fullwidth" id="name1">Submit</button>
+                </div>
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://corato.gocity.it/library/media/ping_pong.jpg" alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Ping Pong Score Keeper
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class='title is-1' id="h1"><span id='p1Display'>0</span> - <span id='p2Display'>0</span>
+                                </h1>
+                                <label for="playTo" class="label is-large is-inline">Select the maximum score</label>
+                                <div class="select is-rounded">
+                                    <select name="" id="playTo">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                    </select>
+                                 </div>
+                                 <p class="subtitle">Use the keys to change the score.</p>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            
+                            <button class="is-primary button card-footer-item" id='p1Button'>+1 player 1</button>
+                            <button class="is-info button card-footer-item" id='p2Button'>+1 player 2</button>
+                        
+                        </footer>
+                        <button class="is-danger button card-footer-item is-fullwidth" id='reset'>Reset score</button>
+                        
+
+                    </div>
+                </div>
+                <div class="column is-2">
+                    <div class="field">
+                        <label class="label">Player 2</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="player name" id="inputName2">
+                        </div>
+                    </div>
+                    <button class="is-info button is-fullwidth" id="name2">Submit</button>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-6 is-offset-3">
+                    <table class="table is-fullwidth is-hoverable table is-striped" id="table">
+                        <thead>
+                            <tr>
+                                <th>matches</th>
+                                <th>winner</th>
+                                <th>score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
